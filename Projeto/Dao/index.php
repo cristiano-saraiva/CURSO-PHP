@@ -7,8 +7,29 @@ require_once "config.php";
 //
 //echo json_encode($usuarios);
 
+  /*traz um usuario apenas*/
+//$usuario = new Usuario();  /*criar classe Usuario mais uma vez*/
+//
+//$usuario->loadById(3);
+//
+//echo $usuario;
+
+//////////////// Carrega uma lista de usuario /////////////////////////////
+
+/*$lista = Usuario::getList();
+
+echo json_encode($lista);*/
+
+//////////////// Procurar em uma lista de usuario /////////////////////////////
+
+/*$busca = Usuario::search("Jo");
+
+echo json_encode($busca);*/
+
+//////////////// Procurar usuario por login e senha  /////////////////////////////
+
 $usuario = new Usuario();  /*criar classe Usuario mais uma vez*/
 
-$usuario->loadById(3);
+$usuario->login("João", "%$#@!");
 
 echo $usuario;
