@@ -1,0 +1,23 @@
+<?php
+
+/* SQL SERVER */
+
+$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS", "root", "P@ssword");
+
+$stmt = $conn->prepare("SELECT * FROM tb_usuarios ORDER BY deslogin");
+
+$stmt->execute();
+
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+foreach ($results as $row ) {
+    foreach ($row as $key => $value) {
+       echo  "<strong>".$key.": </strong>".$value."<br>";
+    }
+
+    echo "<hr>";
+}
+
+// var_dump($results);
+
+
