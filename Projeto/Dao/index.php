@@ -7,7 +7,7 @@ require_once "config.php";
 //
 //echo json_encode($usuarios);
 
-$usuario = new Usuario();
+$usuario = new Usuario();  /*criar classe Usuario*/
 
 $usuario->loadById(3);
 
