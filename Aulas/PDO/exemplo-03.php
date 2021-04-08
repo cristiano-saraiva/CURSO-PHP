@@ -7,7 +7,7 @@ $conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "password");
 
 $stmt = $conn->prepare("INSERT INTO tb_usuarios (deslogin, dessenha) VALUES(:LOGIN, :PASSWORD)");
 
-$login = "Anderson";
+$login = "jose";
 
 $password = "123456789";
 
