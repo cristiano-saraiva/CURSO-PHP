@@ -35,6 +35,13 @@ echo json_encode($busca);*/
 echo $usuario;*/
 
 //////////////// insert usuario   /////////////////////////////
-$aluno = new Usuario("Francisco", "@fran");
+/*$aluno = new Usuario("Francisco", "@fran");
 $aluno->insert();
-echo $aluno;
+echo $aluno;*/
+
+//////////////// Atualizando usuario   /////////////////////////////
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("professor", 'qwerty');
+
+echo $usuario;
