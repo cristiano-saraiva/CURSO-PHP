@@ -28,8 +28,13 @@ echo json_encode($busca);*/
 
 //////////////// Procurar usuario por login e senha  /////////////////////////////
 
-$usuario = new Usuario();  /*criar classe Usuario mais uma vez*/
+/*$usuario = new Usuario();  /*criar classe Usuario mais uma vez*/
 
-$usuario->login("João", "%$#@!");
+/*$usuario->login("João", "%$#@!");
 
-echo $usuario;
+echo $usuario;*/
+
+//////////////// insert usuario   /////////////////////////////
+$aluno = new Usuario("Francisco", "@fran");
+$aluno->insert();
+echo $aluno;
