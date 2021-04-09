@@ -40,8 +40,16 @@ $aluno->insert();
 echo $aluno;*/
 
 //////////////// Atualizando usuario   /////////////////////////////
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("professor", 'qwerty');
+
+echo $usuario;*/
+
+//////////////// Deletando usuario   /////////////////////////////
+
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
 
 echo $usuario;

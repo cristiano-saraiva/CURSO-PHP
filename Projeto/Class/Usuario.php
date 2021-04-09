@@ -160,6 +160,19 @@ class Usuario
         ));
     }
 
+    public function delete()
+    {
+        $sql = new Sql();
+        $results = $sql->select("DELETE FROM tb_usuarios WHERE idusuario = :ID", array(
+            ":ID" => $this->getIdusuario()
+        ));
+
+        $this->setIdusuario(0);
+        $this->setDeslogin("");
+        $this->setDessenha("");
+        $this->setDtcadastro(new DateTime());
+    }
+
     public function __toString()
     {
         return json_encode(array(
