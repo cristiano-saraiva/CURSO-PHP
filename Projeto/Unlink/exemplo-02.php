@@ -1,8 +1,11 @@
 <?php
-$file = fopen("teste.txt", 'w+');
 
-fclose($file);
+if (!is_dir("images")) mkdir('images');
 
-unlink("teste.txt");
+foreach (scandir("images") as $item) {
 
-echo "arquivo removido";
+    if (!in_array($item, array(".", ".."))) {
+        unlink("images/" . $item);
+    }
+}
+echo "ok";
