@@ -1,0 +1,15 @@
+{
+    "name": "cristiano-saraiva/composer",
+    "description": "Curso PHP 7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "cristiano-saraiva",
+            "email": "cristiano.saraivamello@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "root/email",
+    "description": "email",
+    "type": "email",
+    "authors": [
+        {
+            "name": "cristiano-saraiva",
+            "email": "cristiano.saraivamello@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+}
